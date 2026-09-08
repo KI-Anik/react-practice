@@ -10,7 +10,7 @@ function App() {
       <Card firstName="Amir"
         lastName="khan"
         age="40">
-
+          Welcome
       </Card>
     </>
   )
