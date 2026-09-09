@@ -7,10 +7,7 @@ import TestCompnent from "./TestCompnent"
 
 
 const members = [
-  { name: "Rahim", age: 23 },
-  { name: "kahim", age: 52 },
-  { name: "tahim", age: 32 },
-  { name: "sahim", age: 10 },
+  
 ]
 
 function App() {
@@ -42,7 +39,7 @@ function App() {
       </div>
 
       <Counter></Counter>
-      
+
       <div>
         <Form></Form>
       </div>
