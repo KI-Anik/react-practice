@@ -1,5 +1,6 @@
 import Card from "./components/Card"
 import Counter from "./components/Counter"
+import Form from "./components/Form"
 import SecondCard from "./components/SecondCard"
 import ThirdCard from "./components/ThirdCard"
 import TestCompnent from "./TestCompnent"
@@ -13,6 +14,7 @@ const members = [
 ]
 
 function App() {
+
 
   return (
     <>
@@ -40,6 +42,11 @@ function App() {
       </div>
 
       <Counter></Counter>
+      
+      <div>
+        <Form></Form>
+      </div>
+
     </>
   )
 }
