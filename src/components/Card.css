@@ -1,7 +1,19 @@
 .card {
-  background-color: rgba(240, 143, 240, 0.3);
+  background-color: rgba(243, 89, 243, 0.3);
   border-radius: 8px;
   padding: 8px;
   margin: 10px 0px;
   color: black;
+}
+.card-blue {
+  background-color: rgba(103, 93, 211, 0.3);
+  border-radius: 8px;
+  padding: 8px;
+  margin: 10px 0px;
+}
+.card-orange {
+  background-color: rgba(235, 172, 114, 0.3);
+  border-radius: 8px;
+  padding: 8px;
+  margin: 10px 0px;
 }

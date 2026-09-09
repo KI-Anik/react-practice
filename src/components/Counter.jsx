@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { use } from "react";
+import { CounterContext } from "../provider/counter.provider";
+
 
 const Counter = () => {
-    const [count, setCount] = useState(0)
+    const {count,setCount} = use(CounterContext)
 
     const handleIncrement = () => {
         setCount(count + 1)
@@ -13,11 +15,10 @@ const Counter = () => {
         }
     }
 
-
+ 
     return (
-        <div>
+        <div className="card">
             <button onClick={handleIncrement}>Increment</button>
-            {count}
             <button onClick={handleDecrement}>Decrement</button>
         </div>
     );

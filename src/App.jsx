@@ -1,17 +1,22 @@
+import { useState } from "react"
 import Card from "./components/Card"
 import Counter from "./components/Counter"
+import Display from "./components/Display"
 import Form from "./components/Form"
 import SecondCard from "./components/SecondCard"
 import ThirdCard from "./components/ThirdCard"
 import TestCompnent from "./TestCompnent"
+import CounterProvider from "./provider/counter.provider"
 
 
 const members = [
-  
+  { name: "Rahim", age: 23 },
+  { name: "kahim", age: 52 },
+  { name: "tahim", age: 32 },
+  { name: "sahim", age: 10 }
 ]
 
 function App() {
-
 
   return (
     <>
@@ -31,18 +36,22 @@ function App() {
             .map((member) => <SecondCard  name={member.name} age={member.age}></SecondCard>)
         }
       </div> */}
-      <div className="card">
+      {/* <div className="card">
         {
           members
             .map((member) => <ThirdCard name={member.name} age={member.age}></ThirdCard>)
         }
-      </div>
-
-      <Counter></Counter>
+      </div> */}
 
       <div>
-        <Form></Form>
+        <h3 >parent component</h3>
+        <Counter ></Counter>
+        <Display ></Display>
       </div>
+ 
+      {/* <div>
+        <Form></Form>
+      </div> */}
 
     </>
   )
